@@ -9,7 +9,6 @@
 The system provides a centralized platform where users can create IT support tickets, agents can manage and resolve assigned issues, and administrators can monitor the overall helpdesk operations.
 
 The application follows a **role-based access control system** with separate functionalities for **Admin, Agent, and User**. It also includes an **AI-powered chatbot** to assist users with common IT-related queries
-
 ---
 
 ## 🎯 Objectives
