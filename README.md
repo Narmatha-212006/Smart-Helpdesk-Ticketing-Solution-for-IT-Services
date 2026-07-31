@@ -22,7 +22,7 @@ The application follows a **role-based access control system** with separate fun
 * Provide real-time ticket status tracking.
 * Improve communication between users and IT support teams.
 * Provide an AI chatbot for quick assistance with common IT issues.
-* Generate a dashboard for monitoring helpdesk activities.
+* Generate a dashboard for monitoring helpdesk activities
 
 ---
 
