@@ -1,8 +1,9 @@
 # 🎫 Smart Helpdesk Ticketing Solution for IT Services
 
-> An intelligent web-based IT helpdesk ticketing system that enables users to raise support tickets, allows agents to manage and resolve issues, and provides administrators with centralized control over IT service operations
+> An intelligent web-based IT helpdesk ticketing system that enables users to raise support tickets, allows agents to manage and resolve issues, and provides administrators with centralized control over IT service operations.
 
 ## 📌 Overview
+
 
 **Smart Helpdesk Ticketing Solution for IT Services** is a web-based IT support management platform designed to simplify and automate the process of reporting, tracking, assigning, and resolving technical issues.
 
