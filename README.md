@@ -19,7 +19,7 @@ The application follows a **role-based access control system** with separate fun
 * Provide centralized ticket tracking.
 * Enable role-based access for Admin, Agent, and User.
 * Allow agents to efficiently manage assigned support requests.
-* Provide real-time ticket status tracking.
+* Provide real-time ticket status tracking
 * Improve communication between users and IT support teams.
 * Provide an AI chatbot for quick assistance with common IT issues.
 * Generate a dashboard for monitoring helpdesk activities.
