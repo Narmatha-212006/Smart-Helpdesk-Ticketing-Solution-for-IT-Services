@@ -8,7 +8,7 @@
 
 The system provides a centralized platform where users can create IT support tickets, agents can manage and resolve assigned issues, and administrators can monitor the overall helpdesk operations.
 
-The application follows a **role-based access control system** with separate functionalities for **Admin, Agent, and User**. It also includes an **AI-powered chatbot** to assist users with common IT-related queries
+The application follows a **role-based access control system** with separate functionalities for **Admin, Agent, and User**. It also includes an **AI-powered chatbot** to assist users with common IT-related queries.
 
 ---
 
@@ -22,7 +22,7 @@ The application follows a **role-based access control system** with separate fun
 * Provide real-time ticket status tracking.
 * Improve communication between users and IT support teams.
 * Provide an AI chatbot for quick assistance with common IT issues.
-* Generate a dashboard for monitoring helpdesk activities
+* Generate a dashboard for monitoring helpdesk activities.
 
 ---
 
@@ -35,7 +35,7 @@ The application follows a **role-based access control system** with separate fun
 * Password encryption using BCrypt.
 * Role-based access control.
 * Secure API endpoints.
-* User logout functionality
+* User logout functionality.
 
 ### 👤 User Module
 
