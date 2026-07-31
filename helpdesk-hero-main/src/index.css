@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== SMART HELPDESK DESIGN SYSTEM =====
+   All colors MUST be HSL. Never write color classes directly in components.
+   Use semantic tokens defined here.
+*/
+
+@layer base {
+  :root {
+    /* Core surfaces */
+    --background: 220 20% 97%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Brand — deep navy-blue */
+    --primary: 221 83% 53%;
+    --primary-foreground: 0 0% 100%;
+    --primary-dark: 221 83% 43%;
+    --primary-light: 221 83% 95%;
+
+    /* Secondary surface */
+    --secondary: 220 14% 94%;
+    --secondary-foreground: 222 47% 20%;
+
+    --muted: 220 14% 94%;
+    --muted-foreground: 220 9% 46%;
+
+    --accent: 221 83% 53%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Semantic status colors */
+    --status-open: 38 92% 50%;        /* amber */
+    --status-open-bg: 48 100% 95%;
+    --status-inprogress: 221 83% 53%; /* blue */
+    --status-inprogress-bg: 221 83% 95%;
+    --status-closed: 142 71% 45%;     /* green */
+    --status-closed-bg: 141 69% 93%;
+
+    /* Priority colors */
+    --priority-low: 142 71% 45%;
+    --priority-low-bg: 141 69% 93%;
+    --priority-medium: 38 92% 50%;
+    --priority-medium-bg: 48 100% 95%;
+    --priority-high: 0 84% 60%;
+    --priority-high-bg: 0 86% 96%;
+
+    /* Sidebar */
+    --sidebar: 222 47% 11%;
+    --sidebar-foreground: 220 14% 85%;
+    --sidebar-muted: 220 14% 55%;
+    --sidebar-active-bg: 221 83% 53%;
+    --sidebar-active-fg: 0 0% 100%;
+    --sidebar-hover-bg: 222 47% 18%;
+
+    --sidebar-background: 222 47% 11%;
+    --sidebar-foreground: 220 14% 85%;
+    --sidebar-primary: 221 83% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 222 47% 18%;
+    --sidebar-accent-foreground: 220 14% 85%;
+    --sidebar-border: 222 47% 18%;
+    --sidebar-ring: 221 83% 53%;
+
+    /* Utility */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 89%;
+    --input: 220 13% 89%;
+    --ring: 221 83% 53%;
+    --radius: 0.625rem;
+
+    /* Shadows */
+    --shadow-card: 0 1px 3px 0 hsl(222 47% 11% / 0.08), 0 1px 2px -1px hsl(222 47% 11% / 0.06);
+    --shadow-dropdown: 0 10px 15px -3px hsl(222 47% 11% / 0.1), 0 4px 6px -4px hsl(222 47% 11% / 0.07);
+    --shadow-modal: 0 20px 25px -5px hsl(222 47% 11% / 0.15), 0 8px 10px -6px hsl(222 47% 11% / 0.1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Scrollbar styling */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { @apply bg-transparent; }
+  ::-webkit-scrollbar-thumb { @apply bg-border rounded-full; }
+  ::-webkit-scrollbar-thumb:hover { @apply bg-muted-foreground; }
+}
+
+@layer components {
+  /* Stat card gradient backgrounds */
+  .stat-card-primary {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-dark)) 100%);
+  }
+  .stat-card-amber {
+    background: linear-gradient(135deg, hsl(38 92% 50%) 0%, hsl(32 95% 44%) 100%);
+  }
+  .stat-card-green {
+    background: linear-gradient(135deg, hsl(142 71% 45%) 0%, hsl(142 71% 35%) 100%);
+  }
+  .stat-card-red {
+    background: linear-gradient(135deg, hsl(0 84% 60%) 0%, hsl(0 84% 50%) 100%);
+  }
+
+  /* Page fade-in */
+  .page-enter {
+    animation: pageEnter 0.25s ease-out;
+  }
+  @keyframes pageEnter {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Login page card fade-slide-up animation */
+  @keyframes fadeSlideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Sidebar nav item */
+  .nav-item {
+    @apply flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-all duration-150 cursor-pointer;
+    color: hsl(var(--sidebar-foreground));
+  }
+  .nav-item:hover {
+    background: hsl(var(--sidebar-hover-bg));
+  }
+  .nav-item.active {
+    background: hsl(var(--sidebar-active-bg));
+    color: hsl(var(--sidebar-active-fg));
+    box-shadow: 0 2px 8px hsl(var(--primary) / 0.35);
+  }
+}
