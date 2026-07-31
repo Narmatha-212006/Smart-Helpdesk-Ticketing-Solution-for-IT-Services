@@ -35,7 +35,7 @@ The application follows a **role-based access control system** with separate fun
 * Password encryption using BCrypt.
 * Role-based access control.
 * Secure API endpoints.
-* User logout functionality.
+* User logout functionality
 
 ### 👤 User Module
 
