@@ -11,6 +11,7 @@ The system provides a centralized platform where users can create IT support tic
 The application follows a **role-based access control system** with separate functionalities for **Admin, Agent, and User**. It also includes an **AI-powered chatbot** to assist users with common IT-related queries.
 
 ---
+
 ## 🎯 Objectives
 
 * Simplify IT support ticket creation and management.
