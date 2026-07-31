@@ -7,7 +7,6 @@
 **Smart Helpdesk Ticketing Solution for IT Services** is a web-based IT support management platform designed to simplify and automate the process of reporting, tracking, assigning, and resolving technical issues.
 
 The system provides a centralized platform where users can create IT support tickets, agents can manage and resolve assigned issues, and administrators can monitor the overall helpdesk operations.
-
 The application follows a **role-based access control system** with separate functionalities for **Admin, Agent, and User**. It also includes an **AI-powered chatbot** to assist users with common IT-related queries.
 
 ---
